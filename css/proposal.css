@@ -1,0 +1,13 @@
+h1 {
+    font-size:3rem;
+    text-align:center;
+}
+
+h2 {
+    font-size:2rem;
+}
+
+p {
+    text-wrap: balance;
+    font-size:1rem;
+}
