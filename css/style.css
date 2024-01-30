@@ -1,62 +1,209 @@
 * {
     background-color: white;
-}
-
-header {
-    margin-left: auto;
-    margin-right: auto;
-
-    padding-top: 2rem;
-    padding-bottom: 3.5rem;
-    padding-left: 3rem;
-    
-    margin-bottom: 1.5rem;
-    border-radius: 20px;
-    background-color: pink;
-}
-
-header h1 {
-    font-size: 7.5rem;
-    text-align: left;
-    font-weight: 300;
-    margin: 0;
-
-    background-color: pink;
     color: white;
+    font-family: sans-serif;
 }
 
-header p {
-    font-size: 1.5rem;
-    margin: 0;
-
-    background-color: pink;
-    color: white;
-}
-
-.food_box {
+nav {
     display: flex;
     box-sizing: border-box;
     flex-wrap: wrap;
+    padding: 0.5rem;
+}
+
+header {
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    padding: 2rem 6rem;
+    border: none;
+    border-radius: 2rem;
+    background-color: plum;
+    outline: 0.2rem solid black;
+}
+
+input[type=text] {
+    float: center;
     padding: 1rem;
+    border: none;
+    border-radius: 2rem;
+    outline: 0.2rem solid black;
+    font-size: 4rem;
+    color: black;
 }
 
-.food_box div {
-    flex: 0 0 250px;
-    margin: 1rem;
-    background-color:  #ECECEC;
-    border-radius: 10px;
+a {
+    text-decoration: none;
+    font-size: 3rem;
+    font-weight: 200;
 }
 
-.food_box img {
-    height: 175px;
-    width: 250px;
-
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+h1, h2, h3, h4, h5, p {
+    background-color: plum;
+    padding: 0 0.5rem;
 }
 
-.food_box p {
-    background-color:  #ECECEC;
-    padding-left: .5rem;
+h1 {
+    font-size: 8rem;
+    font-weight: 300;
+    margin: 0;
 }
 
+h2 {
+    font-size: 3rem;
+    font-weight: 300;
+    margin: 0;
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-weight: 200;
+    margin: 0 0 0.5rem;
+}
+
+p {
+    font-size: 1rem;
+}
+
+.box {
+    display: flex;
+    box-sizing: border-box;
+    padding: 1rem;
+    margin: auto;
+}
+
+.head {
+    flex-direction: column;
+    width: 80%;
+}
+
+.food {
+    flex-wrap: wrap;
+}
+
+.nav_link {
+    flex-basis: content;
+    padding: 1rem;
+    margin: auto;
+    text-align: center;
+    background-color:  plum;
+    border: none;
+    outline: 0.2rem solid black;
+}
+
+.dropbtn {
+    background-color: plum;
+    color: white;
+    padding: 1rem 4rem;
+    font-size: 3rem;
+    border: none;
+    outline: 0.2rem solid black;
+  }
+  
+.dropdown {
+    position: relative;
+    margin: auto;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    width: 100%;
+    background-color: white;
+    outline: 0.2rem solid black;
+}
+
+.dropdown-content a {
+    color: black;
+    font-size: 2rem;
+    padding: 1rem;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: plum;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: mediumslateblue;}
+
+.food div {
+    flex: 0 0 20%;
+    aspect-ratio: 1/1;
+    margin: 2.5%;
+    background-color:  plum;
+    border-radius: 2rem;
+    outline: 0.2rem solid black;
+}
+
+.food img {
+    width: 100%;
+    max-height: 50%;
+    object-fit: cover;
+
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+}
+
+.content {
+    background-color: plum;
+    flex-direction: column;
+    width: 100%;
+}
+
+.content h2 {
+    font-size: 5rem;
+}
+
+.content h3 {
+    font-size: 2.5rem;
+}
+
+.content h4 {
+    font-size: 2rem;
+    font: bold;
+}
+.content p {
+    font-size: 1.5rem;
+}
+
+.content h3, .content p {
+    margin: 0;
+}
+
+.content h4, .content h5 {
+    margin: 1rem 0 0;
+}
+
+.content img {
+    width: 300px;
+    max-height: 300px;
+}
+
+.content p.openHour {
+    font-size: 2rem;
+}
+
+p.all_ratings, p.uploader {
+    font-size: 2rem;
+    font: bold;
+}
+
+.review {
+    flex-basis: content;
+    padding: 1rem;
+    border: none;
+    outline: 0.2rem solid black;
+    width: 50%;
+    margin-left: 0;
+    flex-direction: column;
+}
+.review p {
+    color: black;
+    background-color: white;
+}
+
+.rest_link{
+    background-color: plum;
+}

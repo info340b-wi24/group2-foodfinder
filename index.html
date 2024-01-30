@@ -3,30 +3,101 @@
 <head>
   <meta charset="utf-8">
   <link rel="stylesheet" href="css/style.css">
+  <title>FoodFinder</title>
 </head>
 
 <body>
-    <header>
-        <h1>FoodFinder</h1>
-        <p>Your guide to local food establishments</p>
-    </header>
+    <div class="box head">
+        <nav>
+            <a class="nav_link" href="index.html">Home</a>
+            <a class="nav_link" href="upload.html">Upload</a>
+        </nav>
+
+        <header>
+            <h1>FoodFinder</h1>
+            <input type="text" placeholder="Search..">
+        </header>
+    </div>
+
+    <div class="box">
+        <div class="dropdown">
+            <button class="dropbtn">Rating</button>
+            <div class="dropdown-content">
+                <a href="#">A</a>
+                <a href="#">B</a>
+                <a href="#">C</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <button class="dropbtn">Cuisine</button>
+            <div class="dropdown-content">
+                <a href="#">Thai</a>
+                <a href="#">Chinese</a>
+                <a href="#">Mexican</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <button class="dropbtn">Price</button>
+            <div class="dropdown-content">
+                <a href="#">$</a>
+                <a href="#">$$</a>
+                <a href="#">$$$</a>
+            </div>
+        </div>
+    </div>
 
     <main>
-
-        <div class="food_box">
+        <div class="box food">
             <div>
-                <img src="img/thaiTom.jpg" alt="food">
-                <p>Thai Tom</p>
-                <p>4543 University Way NE</p>
-                <p></p>
+                <a class="nav_link" href="restaurant_detail.html"><img src="img/thaiTom.jpg" alt="food"></a>
+                <h2>Thai Tom</h2>
+                <h3>4543 University Way NE</h3>
+                <p>Rating: A</p>
+                <p>Cost: $</p>
             </div>
 
             <div>
                 <img src="img/FOOD.webp" alt="food">
-                <p>resturant name placeholder</p>
-                <p>address placeholder</p>
+                <h2>restaurant name placeholder</h2>
+                <h3>address placeholder</h3>
+                <p>Rating: A</p>
+                <p>Cost: $</p>
             </div>
 
+            <div>
+                <img src="img/FOOD.webp" alt="food">
+                <h2>restaurant name placeholder</h2>
+                <h3>address placeholder</h3>
+                <p>Rating: A</p>
+                <p>Cost: $</p>
+            </div>
+
+            <div>
+                <img src="img/FOOD.webp" alt="food">
+                <h2>restaurant name placeholder</h2>
+                <h3>address placeholder</h3>
+                <p>Rating: A</p>
+                <p>Cost: $</p>
+            </div>
+
+            <div>
+                <img src="img/FOOD.webp" alt="food">
+                <h2>restaurant name placeholder</h2>
+                <h3>address placeholder</h3>
+                <p>Rating: A</p>
+                <p>Cost: $</p>
+            </div>
+
+            <div>
+                <img src="img/FOOD.webp" alt="food">
+                <h2>restaurant name placeholder</h2>
+                <h3>address placeholder</h3>
+                <p>Rating: A</p>
+                <p>Cost: $</p>
+            </div>
         </div>
     </main>
 </body>
+</html>
