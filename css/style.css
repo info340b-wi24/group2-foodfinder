@@ -38,7 +38,7 @@ a {
     font-weight: 200;
 }
 
-h1, h2, h3, p {
+h1, h2, h3, h4, h5, p {
     background-color: plum;
     padding: 0 0.5rem;
 }
@@ -146,3 +146,64 @@ p {
     border-top-right-radius: 2rem;
 }
 
+.content {
+    background-color: plum;
+    flex-direction: column;
+    width: 100%;
+}
+
+.content h2 {
+    font-size: 5rem;
+}
+
+.content h3 {
+    font-size: 2.5rem;
+}
+
+.content h4 {
+    font-size: 2rem;
+    font: bold;
+}
+.content p {
+    font-size: 1.5rem;
+}
+
+.content h3, .content p {
+    margin: 0;
+}
+
+.content h4, .content h5 {
+    margin: 1rem 0 0;
+}
+
+.content img {
+    width: 300px;
+    max-height: 300px;
+}
+
+.content p.openHour {
+    font-size: 2rem;
+}
+
+p.all_ratings, p.uploader {
+    font-size: 2rem;
+    font: bold;
+}
+
+.review {
+    flex-basis: content;
+    padding: 1rem;
+    border: none;
+    outline: 0.2rem solid black;
+    width: 50%;
+    margin-left: 0;
+    flex-direction: column;
+}
+.review p {
+    color: black;
+    background-color: white;
+}
+
+.rest_link{
+    background-color: plum;
+}
