@@ -1,28 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../src/index.css">
     <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <title>React App</title>
+    <link rel="icon" href="favicon.ico" />
+    <meta name="author" content="Ryan Nishi, Ben, Kenny, Sean">
+    <meta name="description" content="FoodFinder app">
+    <title>FoodFinder</title>
   </head>
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+    <nav class="topnav">
+      <a class="active" href="index.html">
+          <img id='logo' src="../img/foodfinderlogo.png" alt="home">
+      </a>
+      <!-- <a id='upload' href="upload.html">Upload</a> -->
+    </nav>
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+    <header>
+        <img class="header-image" src="../img/foodfinderlogofull.jpg" alt="logofull">
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
+        <div class="searchbox">
+            <input type="text" placeholder="Search...">
+            <input type="image" class="searchbutton" src="../img/searchbutton.png" alt="search">
+        </div>
+    </header>
+
+    <footer>
+
+    </footer>
   </body>
 </html>
