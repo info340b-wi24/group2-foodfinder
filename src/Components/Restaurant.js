@@ -1,0 +1,1 @@
+//page for detailed restaurant view

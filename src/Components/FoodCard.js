@@ -1,0 +1,1 @@
+//component representing the restaurant cards in the home page

@@ -1,7 +1,8 @@
 * {
-    background-color: white;
+    background-color: none;
     color: white;
-    font-family: sans-serif;
+    border: 0;
+    font-family: "Roboto Condensed", sans-serif;
 }
 
 body {
@@ -9,79 +10,227 @@ body {
     padding: 0;
  }
 
-.topnav {
-    background-color: black;
-    overflow: hidden;
-    padding: 10px 10px;
-}
-
-.topnav a {
-    font-size: 17px;
-    color: #f2f2f2;
-    text-align: center;
-    padding-right: 15px;
-    float: left;
-    background-color: black;}
-
-#logo {
-    display: block;
-    width: 150px;
-    height: auto;
-}
-
-#upload {
-    padding-top: 7px;
-    padding-left: 15px;
-}
-
 header {
-    background-image: url('../img/background_photo.png');
+    background-image: url('img/background_photo.png');
     background-size: cover;
     background-position: center;
 
-    height: 500px;
+    height: 30rem;
 }
 
-.header-image {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-
-    background-color: rgba(0, 0, 0, 0);
+img {
+    background-color:none;
+    height: 3rem;
+    object-fit: contain;
 }
 
-.searchbox input[type=text] {
-    position: absolute;
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-
-    border-radius: 3rem;
-    border: none;
-    width: 580px;
-    height: 50px;
-    outline: none;
-
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 50px;
-
+input[type=text] {
+    width: 30rem;
+    float: center;
+    padding: .75rem 1rem;
+    font-size: 1.5rem;
     color: black;
-    font-size: 20px;
+    border: none;
+    outline: none;
 }
 
-.searchbutton {
-    position: absolute;
-    top: 60%;
-    left: 67%;
-    transform: translate(-50%, -50%);
+button {
+    background-color: #454141;
+}
 
+h2, p {
+    padding: 0;
+    margin: 0 0 0 0.5rem;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0 0 0 0.5rem;
+    padding: 0;
+}
+
+.nav {
+    background-color: #454141;
+    padding: 1rem;
+}
+
+.nav h1 {
+    margin: auto 0;
+}
+
+.footer {
+    background-color: #454141;
+    padding: 0;
+}
+
+.footer h1 {
+    margin: 0 0 1rem 0.5rem;
+}
+
+.footer img {
+    height: 8rem;
+    margin: auto;
+    margin-right: 10%;
+}
+
+.about {
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 40%;
+}
+
+.credits {
+    width: 20%;
+}
+
+.btn {
+    background-color: #C24D4D;
+    color: white;
+    border-radius: 4rem;
+    padding: 0.75rem 1rem;
+
+    font-size: 1.5rem;
+}
+
+.right {
+    float: right;
+    margin-left: auto;
+}
+
+.box {
+    display: flex;
+    box-sizing: border-box;
+    padding: 1rem;
+}
+
+.head {
+    padding: 10rem;
+}
+
+.head img {
+    height: 4rem;
+}
+
+.search {
+    float: center;
+    padding: 0.5rem;
+    border-radius: 1.5rem;
     background-color: white;
-    border-top-right-radius: 3rem;
-    border-bottom-right-radius: 3rem;
-    width: 55px;
-    height: 55px;
-    padding-top: 5px;
-    padding-right: 10px;
+    margin: auto;
+}
+
+.search button {
+    background-color: white;
+}
+
+.search button img {
+    height: 2rem;
+    margin-right: 0.5rem;
+}
+
+.col {
+    flex-direction: column;
+}
+
+.dropbtn {
+    color: #454141;
+    padding: .75rem 1rem;
+    font-size: 1.5rem;
+    border-radius: 2rem;
+    width: 10rem;
+  }
+  
+.dropdown {
+    position: relative;
+    margin: 0 0 0 1rem;
+    display: inline-block;
+}
+
+.dropdown button {
+    background-color: white;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    width: 100%;
+    background-color: white;
+    border-radius: 0 0 2rem 2rem;
+    outline: 0.2rem solid #454141;
+}
+
+.dropdown-content button {
+    color: #454141;
+    padding: .75rem 1rem;
+    font-size: 1.5rem;
+    text-decoration: none;
+    text-align: left;
+    width: 100%;
+    display: block;
+}
+
+.dropdown-content button:last-child {
+    border-radius: 0 0 2rem 2rem;
+}
+
+.dropdown-content button:hover {background-color: plum;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {
+    background-color: mediumslateblue;
+    border-radius: 2rem 2rem 0 0;
+}
+
+.food {
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+.food img {
+    width: 100%;
+    height: 60%;
+    object-fit: cover;
+    margin-bottom: 0.5rem;
+
+    border-radius: 1rem;
+}
+
+.card {
+    flex: 0 0 20%;
+    aspect-ratio: 1/1;
+    margin: 2.5%;
+    margin-bottom: 0;
+    color: black;
+    border-radius: 2rem;
+}
+
+.card h2, .card p {
+    color: #454141;
+}
+
+.card-title {
+    display: flex;
+    box-sizing: border-box;
+}
+
+.grade {
+    background-color: #9D9A9A;
+    color: white;
+    padding: 0 0.5rem;
+    border-radius: 0.8rem;
+}
+
+.card-title .grade {
+    color: white;
 }
