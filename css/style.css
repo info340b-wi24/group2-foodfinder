@@ -12,7 +12,7 @@ body {
 .topnav {
     background-color: black;
     overflow: hidden;
-    padding: 15px 15px;
+    padding: 20px 15px;
 }
 
 .topnav a {
@@ -21,7 +21,8 @@ body {
     text-align: center;
     padding-right: 15px;
     float: left;
-    background-color: black;}
+    background-color: black;
+}
 
 #logo {
     display: block;
@@ -43,6 +44,8 @@ header {
     margin-top: 75px;
     margin-left: 50px;
     margin-right: 50px;
+    margin-bottom: 150px;
+    border-radius: 1rem;
 }
 
 .header-image {
@@ -87,4 +90,48 @@ header {
     height: 55px;
     padding-top: 5px;
     padding-right: 10px;
+}
+
+.food_box {
+    display: flex;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+    margin: 50px;
+}
+
+.food_box img {
+    height: 400px;
+    width: 700px;
+    border-radius: 0.5rem;
+}
+
+.food_box p {
+    color: gray;
+    font-size: 15px;
+
+    padding-left: 15px;
+}
+
+.food_box h2 {
+    color: black;
+
+    margin-top: 0;
+    padding-left: 15px;
+    padding-bottom: 50px;
+}
+
+footer {
+    background-color: black;
+    margin-top: 20px;
+    padding: 20px 15px;
+    color: white;
+    height: 40px;
+}
+
+footer p {
+    background-color: transparent;
+    padding-left: 150px;
+    font-size: 14px;
 }
