@@ -7,7 +7,7 @@ function Upload() {
             <h1>Submit a Review</h1>
             </header>
         
-            <div>
+            <form>
                 <div>
                     <h1 style={{ color: 'black' }}>Want to upload a restaurant?</h1>
                 </div>
@@ -45,7 +45,7 @@ function Upload() {
                 <div>
                 <button style={{ marginTop: '10px', backgroundColor: 'blue', color: 'white', padding: '10px', borderRadius: '10px', border: 'none', cursor: 'pointer', fontSize: '32px' }}>Submit</button>
                 </div>
-            </div>
+            </form>
         </div>
     );
 }

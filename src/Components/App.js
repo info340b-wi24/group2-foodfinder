@@ -3,8 +3,11 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Link } from "react-router-dom";
 import Upload from './Upload.js';
 import Home from './Home.js';
+import Restaurant from './Restaurant.js';
 import logo from "../img/foodfinderlogo.jpg";
 import icon from "../img/foodfinder-favicon-white 2.png";
+
+import korean_tofu_house from "../img/korean_tofu_house.png"
 
 const App = () => {
     return (
@@ -13,12 +16,14 @@ const App = () => {
                 <nav>
                     <div className="nav">
                         <button><Link to="/"><img src={logo} alt="home"/></Link></button>
+                        <Link to="/restaurant"><img src={korean_tofu_house} alt="korean food"/></Link>
 
                         <button className="btn right"><Link to="/upload">SUBMIT A REVIEW</Link></button>
                     </div>
                 </nav>
                 <Routes>
                     <Route path="/" element={<Home />} />
+                    <Route path="/restaurant" element={<Restaurant />} />
                     <Route path="/upload" element={<Upload />} />
                 </Routes>
                 <footer>
