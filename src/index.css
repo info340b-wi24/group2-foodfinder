@@ -98,7 +98,6 @@ ul {
     color: white;
     border-radius: 4rem;
     padding: 0.75rem 1rem;
-
     font-size: 1.5rem;
 }
 
@@ -130,13 +129,16 @@ ul {
     margin: auto;
 }
 
+.search.box {
+    display:
+}
 .search button {
     background-color: white;
 }
 
 .search button img {
     height: 2rem;
-    margin-right: 0.5rem;
+    margin-right: .5rem;
 }
 
 .col {
@@ -234,4 +236,57 @@ ul {
 
 .card-title .grade {
     color: white;
+}
+
+@media (min-width: 390px) and (max-width: 780px) {
+    .logo.left {
+        display: none;
+    }
+
+    .nav img.right {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+    }
+
+    .nav .btn.right {
+        display: none;
+    }
+
+    .icon.right {
+        height: 2.3rem;
+    }
+
+   .btn.right.icon {
+        display: flex;
+        height: 3.3rem;
+   }
+
+   .btn.right.icon img {
+        height: 1.5rem;
+    }
+}
+
+@media (min-width: 781px) {
+    .icon.left {
+        display: none;
+    }
+    .nav img.right {
+        display: none;
+    }
+    .nav .btn.right {
+        display: flex;
+    }
+    .btn.right.icon {
+        display: none;
+    }
+
+}
+
+@media (min-width: 1316px) {
+    
+
+    .head.col.box .icon {
+        display: none;
+    }
 }

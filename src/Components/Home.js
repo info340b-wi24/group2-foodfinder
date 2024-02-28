@@ -3,6 +3,7 @@ import logo from "../img/foodfinderlogo.jpg";
 import search from "../img/searchicon.png";
 import thai_tom from "../img/thaiTom.jpg";
 import placeholder from "../img/FOOD.webp";
+import arrow from "../img/right_arrow.png";
 import icon from "../img/foodfinder-favicon-white 2.png";
 import { BrowserRouter, Route, Link } from "react-router-dom";
 
@@ -11,8 +12,7 @@ function Home() {
         <div>
             <header>
                 <div className="head col box">
-                    <img src={logo} alt="home"/>
-
+                    <img src={logo} alt="home" className="logo"/>
                     <div className="search box">
                         <input type="text" placeholder="Search..."/>
                         <button>
@@ -62,6 +62,7 @@ function Home() {
                 </div>
 
                 <button className="btn right">GO</button>
+                <button className="btn right icon"><img src={arrow} alt="home"/></button>
             </div>
         
             <main>

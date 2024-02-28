@@ -5,6 +5,9 @@ import Upload from './Upload.js';
 import Home from './Home.js';
 import logo from "../img/foodfinderlogo.jpg";
 import icon from "../img/foodfinder-favicon-white 2.png";
+import reviewIF from "../img/icon_submit_frame.png";
+import reviewI from "../img/icon_submit_pen.png";
+
 
 const App = () => {
     return (
@@ -12,9 +15,11 @@ const App = () => {
             <div>
                 <nav>
                     <div className="nav">
-                        <button><Link to="/"><img src={logo} alt="home"/></Link></button>
-
+                        <button><Link to="/"><img src={logo} alt="home" className="logo left"/></Link></button>
+                        <button><Link to="/"><img src={icon} alt="home" className="icon left"/></Link></button>
                         <button className="btn right"><Link to="/upload">SUBMIT A REVIEW</Link></button>
+                        <img src={reviewIF} alt="home" className="right"></img>
+                        <Link to="/upload"><img src={reviewI} alt="home" className="icon right"></img></Link>
                     </div>
                 </nav>
                 <Routes>
