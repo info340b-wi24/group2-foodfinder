@@ -18,7 +18,6 @@ const App = () => {
                     <div className="nav">
                         <button><Link to="/"><img src={logo} alt="home" className="logo left"/></Link></button>
                         <button><Link to="/"><img src={icon} alt="home" className="icon left"/></Link></button>
-                        <Link to="/restaurant"><img src={korean_tofu_house} alt="korean food"/></Link>
 
                         <button className="btn right"><Link to="/upload">SUBMIT A REVIEW</Link></button>
                         <img src={reviewIF} alt="home" className="right"></img>

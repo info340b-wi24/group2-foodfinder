@@ -69,7 +69,7 @@ function Home() {
             <main>
                 <div className="box food">
                     <div className="card">
-                        <img src={korean_tofu_house} alt="korean food"/>
+                        <Link to="/restaurant"><img src={korean_tofu_house} alt="korean food"/></Link>
                         <div className="card-title">
                             <h2>Korean Tofu House</h2>
                             <h2 className="right grade">C</h2>
