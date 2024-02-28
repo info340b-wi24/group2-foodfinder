@@ -8,7 +8,7 @@ import placeholder from "../img/FOOD.webp";
 function Home() {
     return (
         <div>
-            <header>
+            <header className="home-header">
                 <div className="head col box">
                     <img src={logo} alt="home"/>
 
