@@ -1,6 +1,7 @@
 // import logo from "../img/foodfinder-logo-white.png";
 import logo from "../img/foodfinderlogo.jpg";
 import search from "../img/searchicon.png";
+import korean_tofu_house from "../img/korean_tofu_house.png"
 import thai_tom from "../img/thaiTom.jpg";
 import placeholder from "../img/FOOD.webp";
 import arrow from "../img/right_arrow.png";
@@ -10,7 +11,7 @@ import { BrowserRouter, Route, Link } from "react-router-dom";
 function Home() {
     return (
         <div>
-            <header>
+            <header className="home-header">
                 <div className="head col box">
                     <img src={logo} alt="home" className="logo"/>
                     <div className="search box">
@@ -68,7 +69,19 @@ function Home() {
             <main>
                 <div className="box food">
                     <div className="card">
-                        <img src={thai_tom} alt="food"/>
+                        <img src={korean_tofu_house} alt="korean food"/>
+                        <div className="card-title">
+                            <h2>Korean Tofu House</h2>
+                            <h2 className="right grade">C</h2>
+                        </div>
+
+                        <p>Korean</p>
+                        <p>Cost: $$</p>
+                        <p>0.4 miles from UW Campus</p>
+                    </div>
+
+                    <div className="card">
+                        <img src={thai_tom} alt="pad thai"/>
                         <div className="card-title">
                             <h2>Thai Tom</h2>
                             <h2 className="right grade">A</h2>
