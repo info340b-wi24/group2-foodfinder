@@ -1,5 +1,6 @@
 import React from 'react';
-import { BrowserRouter, Route, Link } from "react-router-dom";
+//BrowserRouter, Route from react-router-dom later
+import { Link } from "react-router-dom";
 
 //component representing the restaurant cards in the home page
 function FoodCard(props) {
