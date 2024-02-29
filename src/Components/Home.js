@@ -5,8 +5,8 @@ import korean_tofu_house from "../img/korean_tofu_house.png"
 import thai_tom from "../img/thaiTom.jpg";
 import placeholder from "../img/FOOD.webp";
 import arrow from "../img/right_arrow.png";
-import icon from "../img/foodfinder-favicon-white 2.png";
-import { BrowserRouter, Route, Link } from "react-router-dom";
+//BrowserRouter, Route from react-router-dom later
+import { Link } from "react-router-dom";
 
 function Home() {
     return (
