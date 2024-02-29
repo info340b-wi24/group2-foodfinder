@@ -8,7 +8,8 @@ import logo from "../img/foodfinderlogo.jpg";
 import icon from "../img/foodfinder-favicon-white 2.png";
 import reviewIF from "../img/icon_submit_frame.png";
 import reviewI from "../img/icon_submit_pen.png";
-import korean_tofu_house from "../img/korean_tofu_house.png"
+import foodfinder from "../img/foodfinder-white-transparent-letters.png";
+
 
 const App = () => {
     return (
@@ -18,7 +19,7 @@ const App = () => {
                     <div className="nav">
                         <button><Link to="/"><img src={logo} alt="home" className="logo left"/></Link></button>
                         <button><Link to="/"><img src={icon} alt="home" className="icon left"/></Link></button>
-
+                        <img src={foodfinder} alt="home" className="center"/>
                         <button className="btn right"><Link to="/upload">SUBMIT A REVIEW</Link></button>
                         <img src={reviewIF} alt="home" className="right"></img>
                         <Link to="/upload"><img src={reviewI} alt="home" className="icon right"></img></Link>
