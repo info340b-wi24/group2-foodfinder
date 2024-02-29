@@ -375,10 +375,6 @@ form textarea {
     border-radius: 1rem;
 }
 
-.review-details {
-    width: 70%
-}
-
 .review-details h2 {
     font-weight: 300;
     margin-left: 0;
@@ -392,7 +388,6 @@ form textarea {
 .review-details p {
     margin-left: 1rem;
 }
-
 
 @media (min-width: 390px) and (max-width: 780px) {
     .logo.left {
