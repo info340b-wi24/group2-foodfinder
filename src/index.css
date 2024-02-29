@@ -375,10 +375,6 @@ form textarea {
     border-radius: 1rem;
 }
 
-.review-details {
-    width: 70%
-}
-
 .review-details h2 {
     font-weight: 300;
     margin-left: 0;
@@ -392,7 +388,6 @@ form textarea {
 .review-details p {
     margin-left: 1rem;
 }
-
 
 @media (min-width: 390px) and (max-width: 780px) {
     .logo.left {
@@ -425,26 +420,61 @@ form textarea {
     .head.col.box .logo {
         display: none;
     }
+
+    .nav.box h1 {
+        display: none;
+    }
+
+    .home-header {
+        height: 20rem;
+    }
+
+    .search.box {
+        width: 100%;
+    }
+    
+    .review.box {
+        margin-bottom: 5rem;
+    }
+    img.center {
+        float: center;
+        margin: 0 4rem;
+        width: 50%;
+    }
 }
 
 @media (min-width: 781px) {
     .icon.left {
         display: none;
     }
+
     .nav img.right {
         display: none;
     }
+
     .nav .btn.right {
         display: flex;
     }
+
     .btn.right.icon {
         display: none;
     }
 
+    .review-details {
+        width: 50%;
+    }
+    
+    img.center {
+        display: none;
+    }
 }
 
 @media (min-width: 1316px) {
     .head.col.box .icon {
         display: none;
+    }
+
+    .review-details {
+        width: 70%;
     }
 }

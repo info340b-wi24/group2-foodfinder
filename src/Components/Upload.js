@@ -1,6 +1,16 @@
 import React from 'react';
 
 function Upload() {
+    const handleSubmit = (e) => {
+        e.preventDefault();
+
+        // Im getting these user inputs, but Idk how to use it in home.js
+        console.log("resturant: " + document.getElementById('restaurantName').value);
+        console.log("cuisine: " + document.getElementById('cuisineType').value);
+        console.log("rating: " + document.getElementById('rating').value);
+        console.log("description: " + document.getElementById('description').value);
+    };
+
     return (
         <div>
             <div className="col box">
@@ -8,7 +18,7 @@ function Upload() {
                 <h1>Submit a Review</h1>
                 </header>
             
-                <form>
+                <form onSubmit={handleSubmit}>
                     <div>
                         <h2>Restaurant Name</h2>
                         <input id="restaurantName" type="text" placeholder="Restaurant" />
@@ -26,7 +36,7 @@ function Upload() {
 
                     <div>
                         <h2>Review Description</h2>
-                        <textarea name="description" cols="80" rows="4" placeholder="Review Description"></textarea>
+                        <textarea id="description" cols="80" rows="4" placeholder="Review Description"></textarea>
                     </div>
 
                     <div>
@@ -37,11 +47,13 @@ function Upload() {
                         </div>
                     </div>
 
-                    <button className="btn">Submit Review</button>
+                    <button className="btn" type="submit">Submit Review</button>
                 </form>
             </div>
         </div>
     );
 }
+
+
 
 export default Upload;

@@ -1,9 +1,5 @@
 [
   {"name":"Korean Tofu House", "type": "Korean", "rating": "C", "cost": "$$", "description": "0.4 miles from UW Campus", "img": "/static/media/korean_tofu_house.a375bd66bc0832f0a33f.png"},
   {"name":"Thai Tom", "type": "Thai", "rating": "A", "cost": "$", "description": "0.5 miles from UW Campus", "img": "/static/media/thaiTom.a6c23eb3ac6aaf17a4cf.jpg"},
-  {"name":"Restaurant Placeholder", "type": "Cuisine Placeholder", "rating": "C", "cost": "$", "description": "0.5 miles from UW Campus", "img": "/static/media/FOOD.2774a77eea14521e52d8.webp"},
-  {"name":"Restaurant Placeholder", "type": "Cuisine Placeholder", "rating": "C", "cost": "$", "description": "0.5 miles from UW Campus", "img": "/static/media/FOOD.2774a77eea14521e52d8.webp"},
-  {"name":"Restaurant Placeholder", "type": "Cuisine Placeholder", "rating": "C", "cost": "$", "description": "0.5 miles from UW Campus", "img": "/static/media/FOOD.2774a77eea14521e52d8.webp"},
-  {"name":"Restaurant Placeholder", "type": "Cuisine Placeholder", "rating": "C", "cost": "$", "description": "0.5 miles from UW Campus", "img": "/static/media/FOOD.2774a77eea14521e52d8.webp"},
   {"name":"Restaurant Placeholder", "type": "Cuisine Placeholder", "rating": "C", "cost": "$", "description": "0.5 miles from UW Campus", "img": "/static/media/FOOD.2774a77eea14521e52d8.webp"}
 ]
