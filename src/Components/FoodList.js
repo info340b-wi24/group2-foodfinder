@@ -11,7 +11,7 @@ function FoodCard(props) {
           <h2 className="right grade">{props.rating}</h2>
       </div>
       <p>{props.type}</p>
-      <p>Cost: $</p>
+      <p>{props.cost}</p>
       <p>{props.description}</p>
     </div>
   )
