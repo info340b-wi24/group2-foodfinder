@@ -70,12 +70,15 @@ form .btn {
 
 form input[type=text] {
     font-size: 1.5rem;
+    width: auto;
 }
 
 form textarea {
     color: black;
     font-size: 1.5rem;
     margin: 1rem;
+    width: 80%;
+    height: 8rem;
 }
 
 .nav {
@@ -223,12 +226,13 @@ form textarea {
     border-radius: 0 0 2rem 2rem;
 }
 
-.dropdown-content button:hover {background-color: plum;}
+.dropdown-content button:hover {background-color: #c24d4dbb;}
 
 .dropdown:hover .dropdown-content {display: block;}
 
 .dropdown:hover .dropbtn {
-    background-color: mediumslateblue;
+    background-color: #C24D4D;
+    color: white;
     border-radius: 2rem 2rem 0 0;
 }
 
@@ -351,19 +355,10 @@ form textarea {
     margin-bottom: 1rem;
 }
 
-/* remove later once rating graph is implemented */
-.rating img {
-    height: 16rem;
-}
-
 .rating .grade, .review-details .grade {
     background-color: #9D9A9A;
     padding: 0.25rem 0.5rem;
 }
-
-/* .rating .grade {
-    margin-top: 0.5rem;
-} */
 
 .review {
     height: 16rem;
@@ -389,7 +384,7 @@ form textarea {
     margin-left: 1rem;
 }
 
-@media (min-width: 390px) and (max-width: 780px) {
+@media (max-width: 780px) {
     .logo.left {
         display: none;
     }
@@ -402,10 +397,6 @@ form textarea {
 
     .nav .btn.right {
         display: none;
-    }
-
-    .icon.right {
-        height: 2.3rem;
     }
 
    .btn.right.icon {
@@ -423,6 +414,17 @@ form textarea {
 
     .nav.box h1 {
         display: none;
+    }
+
+    .card {
+        flex-basis: 90%;
+        margin: 5%;
+        margin-bottom: 0;
+        aspect-ratio: 1.2/1;
+    }
+
+    .food img {
+        height: 75%;
     }
 
     .home-header {
@@ -443,7 +445,7 @@ form textarea {
     }
 }
 
-@media (min-width: 781px) {
+@media (min-width: 781px) and (max-width: 1316px) {
     .icon.left {
         display: none;
     }
@@ -460,6 +462,10 @@ form textarea {
         display: none;
     }
 
+    .card {
+        flex-basis: 45%;
+    }
+
     .review-details {
         width: 50%;
     }
@@ -470,6 +476,26 @@ form textarea {
 }
 
 @media (min-width: 1316px) {
+    .icon.left {
+        display: none;
+    }
+
+    .nav img.right {
+        display: none;
+    }
+
+    img.center {
+        display: none;
+    }
+
+    .nav img.right {
+        display: none;
+    }
+
+    .btn.right.icon {
+        display: none;
+    }
+
     .head.col.box .icon {
         display: none;
     }

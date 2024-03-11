@@ -1,5 +1,5 @@
 {
-    "all": ["price", "cuisine", "rating", "distance"],
+    "all": ["price", "cuisine", "rating"],
     
     "price": {
         "name": "Price",
@@ -14,12 +14,5 @@
     "rating": {
         "name": "Rating",
         "list": ["A", "B", "C", "D", "E", "F"]
-    },
-
-    "distance": {
-        "name": "Distance",
-        "list": ["<0.5 miles from UW Campus",
-            "~1 mile from UW Campus",
-            "~2 miles from UW Campus"]
     }
 }

@@ -34,7 +34,6 @@ function Home() {
                 <Dropdown category={dropdowns.price}/>
                 <Dropdown category={dropdowns.cuisine}/>
                 <Dropdown category={dropdowns.rating}/>
-                <Dropdown category={dropdowns.distance}/>
 
                 <button className="btn right">GO</button>
                 <button className="btn right icon"><img src={arrow} alt="mobile submit icon"/></button>

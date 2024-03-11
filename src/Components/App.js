@@ -1,37 +1,42 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { Link } from "react-router-dom";
+import { Routes, Route, Navigate, Link } from 'react-router-dom'
 import Upload from './Upload.js';
+
 import Home from './Home.js';
 import Restaurant from './Restaurant.js';
+
 import logo from "../img/foodfinderlogo.jpg";
 import icon from "../img/foodfinder-favicon-white 2.png";
-import reviewIF from "../img/icon_submit_frame.png";
-import reviewI from "../img/icon_submit_pen.png";
+import review from "../img/icon_submit.png";
 import foodfinder from "../img/foodfinder-white-transparent-letters.png";
 
 
 const App = () => {
     return (
-        <Router>
-            <div>
+        <div>
+            <header>
                 <nav>
                     <div className="nav">
-                        <button><Link to="/"><img src={logo} alt="foodfinder full logo" className="logo left"/></Link></button>
-                        <button><Link to="/"><img src={icon} alt="foodfinder icon" className="icon left"/></Link></button>
+                        <Link to="/"><img src={logo} alt="foodfinder full logo" className="logo left"/></Link>
+                        <Link to="/"><img src={icon} alt="foodfinder icon" className="icon left"/></Link>
 
                         <img src={foodfinder} alt="home" className="center"/>
                         <button className="btn right"><Link to="/upload">SUBMIT A REVIEW</Link></button>
-                        <img src={reviewIF} alt="mobile review icon box" className="right"></img>
-                        <Link to="/upload"><img src={reviewI} alt="mobile review icon pencil" className="icon right"></img></Link>
+                        <Link to="/upload"><img src={review} alt="mobile review icon" className="icon right"/></Link>
                     </div>
                 </nav>
-                <Routes>
-                    <Route path="/" element={<Home />} />
-                    <Route path="/restaurant" element={<Restaurant />} />
-                    <Route path="/upload" element={<Upload />} />
-                </Routes>
-                <footer>
+            </header>
+
+            <Routes>
+                <Route path="/home" element={<Home />} />
+                <Route path="/restaurant" element={<Restaurant />} />
+                {/* <Route path=':restaurant' element={<Restaurant/>}/> */}
+                <Route path="/upload" element={<Upload />} />
+
+                <Route path="*" element={<Navigate to='home' />} />
+            </Routes>
+
+            <footer>
                 <div className="footer box">
                     <div className="about col box">
                         <h1>ABOUT</h1>
@@ -53,8 +58,7 @@ const App = () => {
                     <img src={icon} alt="foodfinder icon" className="right"/>
                 </div>
             </footer>
-            </div>
-        </Router>
+        </div>
     );
 };
 

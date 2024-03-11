@@ -2,37 +2,26 @@
 import korean_tofu_house_header from "../img/korean_tofu_house_detail.png"
 import kenny from "../img/chicken_and_broccoli.png"
 import ben from "../img/korean_lunch.png"
-import ratings from "../img/ratings.png"
 
 function Restaurant () {
+    //map list of comments to a const then replace example reviews in return.
+
     return (
         <div>
             <div className="restaurant box">
-                <img src={korean_tofu_house_header} alt="korean dishes"/>
+                <img src={korean_tofu_house_header} /> {/* props.img */}
                 <div className="title box">
-                    <h1>Korean Tofu House</h1>
-                    <h1 className="right grade">C</h1>
+                    <h1>Korean Tofu House</h1> {/* props.name */}
+                    <h1 className="right grade">C</h1> {/* props.rating */}
                 </div>
             </div>
 
             <div className="content box">
                 <div className="detail col">
                     <h2>Details</h2>
-                    <p>Korean<br/>
-                    $$<br/>
-                    0.4 Miles from UW Campus</p>
-                </div>
-
-                <div className="rating col">
-                    <h2>Rating Distribution</h2>
-                    {/* <div className="col">
-                        <p className="grade">A</p>
-                        <p className="grade">B</p>
-                        <p className="grade">C</p>
-                        <p className="grade">D</p>
-                        <p className="grade">F</p>
-                    </div> */}
-                    <img src={ratings} alt="rating distribution graph"/>
+                    <p>Korean<br/> {/* props.type */}
+                    $$<br/> {/* props.cost */}
+                    0.4 Miles from UW Campus</p> {/* props.description */}
                 </div>
             </div>
 
