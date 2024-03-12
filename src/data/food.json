@@ -5,19 +5,19 @@
     "rating": "C",
     "cost": "$$",
     "description": "0.4 miles from UW Campus",
-    "img": "/static/media/korean_tofu_house.a375bd66bc0832f0a33f.png",
+    "img": "img/korean_tofu_house.png",
     "reviews": [
       {
         "name": "Kenny Xie",
         "grade": "B",
         "comment": "It was kinda mid tbh, so expensive and not worth the wait but food was pretty good",
-        "img": "../img/chicken_and_broccoli.png"
+        "img": "img/chicken_and_broccoli.png"
       },
       {
         "name": "Ben Bunyatipanon",
         "grade": "B",
         "comment": "It was kinda mid tbh, so expensive and not worth the wait but food was pretty good",
-        "img": "../img/korean_lunch.png"
+        "img": "img/korean_lunch.png"
       }
     ]
   },
@@ -26,7 +26,7 @@
     "type": "Thai", "rating": "A",
     "cost": "$",
     "description": "0.5 miles from UW Campus",
-    "img": "/static/media/thaiTom.a6c23eb3ac6aaf17a4cf.jpg"
+    "img": "img/thaiTom.jpg"
   },
   {
     "name":"Restaurant Placeholder",
@@ -34,6 +34,6 @@
     "rating": "C",
     "cost": "$",
     "description": "0.5 miles from UW Campus",
-    "img": "/static/media/FOOD.2774a77eea14521e52d8.webp"
+    "img": "img/FOOD.webp"
   }
 ]

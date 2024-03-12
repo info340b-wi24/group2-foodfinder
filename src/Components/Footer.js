@@ -1,5 +1,4 @@
 import React from 'react';
-import icon from "../img/foodfinder-favicon-white 2.png";
 
 const Footer = () => {
     return (
@@ -22,7 +21,7 @@ const Footer = () => {
                     </ul>
                 </div>
 
-                <img src={icon} alt="foodfinder icon" className="right"/>
+                <img src="../img/foodfinder-favicon-white 2.png" alt="foodfinder icon" className="right"/>
             </div>
         </footer>
     );

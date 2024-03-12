@@ -1,8 +1,4 @@
-// import logo from "../img/foodfinder-logo-white.png";
 import React, { useState } from 'react';
-
-import logo from "../img/foodfinderlogo.jpg";
-import search from "../img/searchicon.png";
 
 import Dropdown from "./Dropdown.js";
 import FoodList from "./FoodList.js";
@@ -26,11 +22,11 @@ function Home(props) {
         <div>
             <header className="home-header">
                 <div className="head col box">
-                    <img src={logo} alt="foodfinder full logo" className="logo"/>
+                    <img src="../img/foodfinderlogo.jpg" alt="foodfinder full logo" className="logo"/>
                     <div className="search box">
                         <input type="text" placeholder="Search..."/>
                         <button>
-                            <img src={search} alt="search magnifying glass icon"/>
+                            <img src="../img/searchicon.png" alt="search magnifying glass icon"/>
                         </button>
                     </div>
                 </div>

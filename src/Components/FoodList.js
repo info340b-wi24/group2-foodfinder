@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 function FoodCard(props) {
   return (
     <div className="card">
-      <Link to="/restaurant"><img src={props.img} alt={props.name}/></Link>
+      <Link to="/restaurant"><img src={"../"+props.img} alt={props.name}/></Link>
       <div className="card-title">
           <h2>{props.name}</h2>
           <h2 className="right grade">{props.rating}</h2>
