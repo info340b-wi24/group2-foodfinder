@@ -9,6 +9,7 @@ function Upload(props) {
         const name = document.getElementById('restaurantName').value;
         const type = document.getElementById('cuisineType').value;
         const rating = document.getElementById('rating').value;
+        const price = document.getElementById('price').value;
         const description = document.getElementById('description').value;
 
         if(name.length === 0 || type.length === 0  || rating.length === 0 || description.length === 0) {
@@ -20,8 +21,9 @@ function Upload(props) {
             name: name,
             type: type,
             rating: rating,
+            cost: price,
             description: description,
-            img: "/static/media/FOOD.2774a77eea14521e52d8.webp"
+            img: "img/FOOD.webp"
           };
 
         props.applyRestaurantCallback(newRestaurant);
@@ -49,6 +51,11 @@ function Upload(props) {
                     <div>
                         <h2>Rating</h2>
                         <input id="rating" type="text" placeholder="Letter Rating" />
+                    </div>
+
+                    <div>
+                        <h2>Price</h2>
+                        <input id="price" type="text" placeholder="$, $$, $$$, etc." />
                     </div>
 
                     <div>
