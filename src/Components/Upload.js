@@ -25,7 +25,7 @@ function Upload(props) {
           };
 
         props.applyRestaurantCallback(newRestaurant);
-        nav('/');
+        nav('/home');
     };
 
     return (
