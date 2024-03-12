@@ -31,9 +31,9 @@ function Upload(props) {
     return (
         <div>
             <div className="col box">
-                <header className="review-header">
-                <h1>Submit a Review</h1>
-                </header>
+                <div className="review-header">
+                    <h1>Submit a Review</h1>
+                </div>
             
                 <form onSubmit={handleSubmit}>
                     <div>
@@ -53,7 +53,7 @@ function Upload(props) {
 
                     <div>
                         <h2>Review Description</h2>
-                        <textarea id="description" cols="80" rows="4" placeholder="Review Description"></textarea>
+                        <textarea id="description" placeholder="Review Description"></textarea>
                     </div>
 
                     <div>

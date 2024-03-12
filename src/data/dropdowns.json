@@ -1,0 +1,18 @@
+{
+    "all": ["price", "cuisine", "rating"],
+    
+    "price": {
+        "name": "Price",
+        "list": ["$", "$$", "$$$"]
+    },
+
+    "cuisine": {
+        "name": "Cuisine",
+        "list": ["Korean", "Thai", "Chinese", "Mexican"]
+    },
+
+    "rating": {
+        "name": "Rating",
+        "list": ["A", "B", "C", "D", "E", "F"]
+    }
+}
