@@ -41,9 +41,9 @@ function Upload() {
 
                     <div>
                         <h2>Upload a Photo</h2>
-                        <div style={{ border: '2px dashed #aaaaaa', borderRadius: '5px', padding: '20px', textAlign: 'center', width: '150px', height: '150px', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
-                            <div style={{ fontSize: '36px', marginBottom: '10px', color: 'black'  }}>+</div>
-                                <p style={{ color: 'black' }}>Drag & drop your photo here</p>
+                        <div className="upload">
+                            <div>+</div>
+                            <p>Drag & drop your photo here</p>
                         </div>
                     </div>
 

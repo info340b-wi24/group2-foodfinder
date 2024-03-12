@@ -1,4 +1,6 @@
 // import logo from "../img/foodfinder-logo-white.png";
+import React, { useState } from 'react';
+
 import logo from "../img/foodfinderlogo.jpg";
 import search from "../img/searchicon.png";
 import arrow from "../img/right_arrow.png";
@@ -12,8 +14,21 @@ import FoodList from "./FoodList.js";
 
 import dropdowns from "../data/dropdowns.json";
 import FOOD_LIST from "../data/food.json";
-
+//onclick={setDropdown("")}
 function Home() {
+    const [dropdown, setDropdown] = useState("");
+    let foodList = FOOD_LIST;
+
+    function dropdownSelection(item) {
+        setDropdown(item);
+    }
+    
+    
+    console.log(foodList);
+    if (dropdown !== "") {
+        foodList = FOOD_LIST.filter((restaurant) => (restaurant.cost === dropdown || restaurant.type === dropdown || restaurant.rating === dropdown));
+    }
+    console.log(foodList);
     return (
         <div>
             <header className="home-header">
@@ -31,16 +46,15 @@ function Home() {
             <div className="nav box">
                 <h1>Looking to explore new restaurants?</h1>
 
-                <Dropdown category={dropdowns.price}/>
-                <Dropdown category={dropdowns.cuisine}/>
-                <Dropdown category={dropdowns.rating}/>
+                <Dropdown category={dropdowns.price} callback={dropdownSelection} />
+                <Dropdown category={dropdowns.cuisine} callback={dropdownSelection} />
+                <Dropdown category={dropdowns.rating} callback={dropdownSelection} />
 
-                <button className="btn right">GO</button>
-                <button className="btn right icon"><img src={arrow} alt="mobile submit icon"/></button>
+                <button className="btn right" onClick={() => {setDropdown("")}}>Reset</button>
             </div>
         
             <main>
-                <FoodList foodData = {FOOD_LIST}/>
+                <FoodList foodData={foodList}/>
             </main>
         </div>
       );

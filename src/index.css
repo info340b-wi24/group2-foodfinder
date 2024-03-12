@@ -81,6 +81,28 @@ form textarea {
     height: 8rem;
 }
 
+form div .upload {
+    border: 2px dashed #aaaaaa;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+form div .upload div {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: black;
+}
+
+font div .upload p {
+    color: black;
+}
+
 .nav {
     background-color: #454141;
     padding: 1rem;
@@ -287,6 +309,7 @@ form textarea {
     padding: 0.5rem 2rem;
 }
 
+
 .restaurant {
     margin: 0;
     padding: 0;
@@ -384,6 +407,9 @@ form textarea {
     margin-left: 1rem;
 }
 
+
+
+
 @media (max-width: 780px) {
     .logo.left {
         display: none;
@@ -438,10 +464,15 @@ form textarea {
     .review.box {
         margin-bottom: 5rem;
     }
+
     img.center {
         float: center;
         margin: 0 4rem;
         width: 50%;
+    }
+
+    .dropdown {
+        
     }
 }
 

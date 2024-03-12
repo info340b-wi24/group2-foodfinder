@@ -5,7 +5,7 @@ function Dropdown (props) {
     const category = props.category
 
     const dropContent = category.list.map((dropItem) => {
-        return <button key={dropItem}>{dropItem}</button>
+        return <button key={dropItem} onClick={() => {props.callback(dropItem)}}>{dropItem}</button>
     });
 
     return (
