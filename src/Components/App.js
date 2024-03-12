@@ -8,9 +8,6 @@ import Restaurant from './Restaurant.js';
 import Navbar from './Navbar.js';
 import Footer from './Footer.js';
 
-import FOOD_LIST from "../data/food.json";
-
-
 const App = () => {
     const [restaurant, setRestaurant] = useState(FOOD_LIST);
 
