@@ -1,14 +1,31 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
-function Upload() {
+function Upload(props) {
+    const nav = useNavigate();
+
     const handleSubmit = (e) => {
         e.preventDefault();
+        const name = document.getElementById('restaurantName').value;
+        const type = document.getElementById('cuisineType').value;
+        const rating = document.getElementById('rating').value;
+        const description = document.getElementById('description').value;
 
-        // Im getting these user inputs, but Idk how to use it in home.js
-        console.log("resturant: " + document.getElementById('restaurantName').value);
-        console.log("cuisine: " + document.getElementById('cuisineType').value);
-        console.log("rating: " + document.getElementById('rating').value);
-        console.log("description: " + document.getElementById('description').value);
+        if(name.length === 0 || type.length === 0  || rating.length === 0 || description.length === 0) {
+            alert('error, must input information before submit.');
+            return;
+        }
+
+        const newRestaurant = {
+            name: name,
+            type: type,
+            rating: rating,
+            description: description,
+            img: "/static/media/FOOD.2774a77eea14521e52d8.webp"
+          };
+
+        props.applyRestaurantCallback(newRestaurant);
+        nav('/');
     };
 
     return (

@@ -3,9 +3,10 @@ import React from 'react';
 
 function Dropdown (props) {
     const category = props.category
+    const selection = props.callback;
 
     const dropContent = category.list.map((dropItem) => {
-        return <button key={dropItem} onClick={() => {props.callback(dropItem)}}>{dropItem}</button>
+        return <button key={dropItem} onClick={() => {selection(dropItem)}}>{dropItem}</button>
     });
 
     return (
