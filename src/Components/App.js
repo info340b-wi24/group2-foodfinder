@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Link } from "react-router-dom";
 import Upload from './Upload.js';
@@ -9,8 +9,18 @@ import icon from "../img/foodfinder-favicon-white 2.png";
 import reviewIF from "../img/icon_submit_frame.png";
 import reviewI from "../img/icon_submit_pen.png";
 import korean_tofu_house from "../img/korean_tofu_house.png"
+import FOOD_LIST from "../data/food.json";
+
 
 const App = () => {
+    const [restaurant, setRestaurant] = useState(FOOD_LIST);
+
+    function applyRestaurant(newRestaurant) {
+        const foodList = FOOD_LIST;
+        foodList.push(newRestaurant);
+        setRestaurant(foodList);
+    }
+
     return (
         <Router>
             <div>
@@ -25,9 +35,9 @@ const App = () => {
                     </div>
                 </nav>
                 <Routes>
-                    <Route path="/" element={<Home />} />
+                    <Route path="/" element={<Home foodList = { restaurant } />} />
                     <Route path="/restaurant" element={<Restaurant />} />
-                    <Route path="/upload" element={<Upload />} />
+                    <Route path="/upload" element={<Upload applyRestaurantCallback = {applyRestaurant}/>} />
                 </Routes>
                 <footer>
                 <div className="footer box">

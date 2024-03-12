@@ -10,7 +10,7 @@ import FoodList from "./FoodList.js";
 import FOOD_LIST from "../data/food.json";
 import { BrowserRouter, Route, Link } from "react-router-dom";
 
-function Home() {
+function Home(props) {
     return (
         <div>
             <header className="home-header">
@@ -69,7 +69,7 @@ function Home() {
             </div>
         
             <main>
-                <FoodList foodData = {FOOD_LIST}/>
+                <FoodList foodData = {props.foodList}/>
             </main>
         </div>
       );
