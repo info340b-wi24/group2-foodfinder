@@ -1,10 +1,7 @@
 import React, { useState } from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { Link } from "react-router-dom";
 
-import reviewIF from "../img/icon_submit_frame.png";
-import reviewI from "../img/icon_submit_pen.png";
-
+import FOOD_LIST from "../data/food.json";
+import { Routes, Route, Navigate } from 'react-router-dom';
 import Upload from './Upload.js';
 import Home from './Home.js';
 import Restaurant from './Restaurant.js';
@@ -28,11 +25,12 @@ const App = () => {
             <header>
                 <Navbar />
             </header>
+
             <Routes>
-                <Route path="/home" element={<Home />} />
+                <Route path="/home" element={<Home foodList = {restaurant}/>} />
                 <Route path="/restaurant" element={<Restaurant />} />
                 {/* <Route path=':restaurant' element={<Restaurant/>}/> */}
-                <Route path="/upload" element={<Upload />} />
+                <Route path="/upload" element={<Upload applyRestaurantCallback = {applyRestaurant}/>} />
                 <Route path="*" element={<Navigate to='home' />} />
             </Routes>
             <Footer />
