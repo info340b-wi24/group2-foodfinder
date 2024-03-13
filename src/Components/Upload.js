@@ -20,7 +20,7 @@ function Upload(props) {
         }
 
         if(name.length === 0 || type.length === 0  || rating.length === 0 || description.length === 0) {
-            alert('Error, must input information before submit.');
+            alert('Please input all information before submitting!');
             return;
         }
         
@@ -52,29 +52,48 @@ function Upload(props) {
 
                     <div>
                         <h2>Cuisine Type</h2>
-                        <input id="cuisineType" type="text" placeholder="Mexican, Chinese, etc." />
+                            <select id="cuisineType">
+                                <option value="" disabled selected hidden>Select Cuisine Type</option>
+                                <option value="Mexican" >Mexican</option>
+                                <option value="Chinese">Chinese</option>
+                                <option value="Thai">Thai</option>
+                                <option value="Korean">Korean</option>
+                                <option value="Other">Other</option>
+                            </select>
                     </div>
 
                     <div>
                         <h2>Rating</h2>
-                        <input id="rating" type="text" placeholder="Letter Rating" />
+                            <select id="rating">
+                                <option value="" disabled selected hidden>Select Rating</option>
+                                <option value="A">A</option>
+                                <option value="B">B</option>
+                                <option value="C">C</option>
+                                <option value="D">D</option>
+                                <option value="F">F</option>
+                            </select>
                     </div>
 
                     <div>
                         <h2>Price</h2>
-                        <input id="price" type="text" placeholder="$, $$, $$$, etc." />
+                            <select id="price">
+                                <option value="" disabled selected hidden>Select Price</option>
+                                <option value="$">$</option>
+                                <option value="$$">$$</option>
+                                <option value="$$$">$$$</option>
+                            </select>
                     </div>
 
                     <div>
                         <h2>Review Description</h2>
-                        <textarea id="description" placeholder="Review Description"></textarea>
+                        <textarea id="description" placeholder="Review Description" style={{border: '1px solid black'}}></textarea>
                     </div>
 
                     <div>
                         <h2>Upload a Photo</h2>
                         <div className="upload">
-                            <div>+</div>
-                            <p>Drag & drop your photo here</p>
+                            <input type="file" accept="image/*" id="photoUpload" style={{color: 'black'}} />
+                            <label htmlFor="photoUpload" className="upload-btn">Upload Photo</label>
                         </div>
                     </div>
 
@@ -84,7 +103,5 @@ function Upload(props) {
         </div>
     );
 }
-
-
 
 export default Upload;
