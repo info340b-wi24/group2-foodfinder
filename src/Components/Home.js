@@ -8,14 +8,23 @@ import FOOD_LIST from "../data/food.json";
 
 function Home(props) {
     const [dropdown, setDropdown] = useState("");
+    const [searchTerm, setSearchTerm] = useState("");
     let foodList = props.foodList;
 
     function dropdownSelection(item) {
         setDropdown(item);
     }
-    
+
+    function handleSearch(event) {
+        setSearchTerm(event.target.value);
+    }
+
     if (dropdown !== "") {
         foodList = FOOD_LIST.filter((restaurant) => (restaurant.cost === dropdown || restaurant.type === dropdown || restaurant.rating === dropdown));
+    }
+
+    if (searchTerm) {
+        foodList = foodList.filter((restaurant) => restaurant.name.toLowerCase().includes(searchTerm.toLowerCase()));
     }
 
     return (
@@ -24,7 +33,7 @@ function Home(props) {
                 <div className="head col box">
                     <img src="../img/foodfinderlogo.jpg" alt="foodfinder full logo" className="logo"/>
                     <div className="search box">
-                        <input type="text" placeholder="Search..."/>
+                        <input type="text" placeholder="Search..." onChange={handleSearch} />
                         <button>
                             <img src="../img/searchicon.png" alt="search magnifying glass icon"/>
                         </button>
