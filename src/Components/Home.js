@@ -4,7 +4,6 @@ import Dropdown from "./Dropdown.js";
 import FoodList from "./FoodList.js";
 
 import dropdowns from "../data/dropdowns.json";
-import FOOD_LIST from "../data/food.json";
 
 function Home(props) {
     const [dropdown, setDropdown] = useState("");
@@ -20,7 +19,7 @@ function Home(props) {
     }
 
     if (dropdown !== "") {
-        foodList = FOOD_LIST.filter((restaurant) => (restaurant.cost === dropdown || restaurant.type === dropdown || restaurant.rating === dropdown));
+        foodList = foodList.filter((restaurant) => (restaurant.cost === dropdown || restaurant.type === dropdown || restaurant.rating === dropdown));
     }
 
     if (searchTerm) {
@@ -48,11 +47,11 @@ function Home(props) {
                 <Dropdown category={dropdowns.cuisine} callback={dropdownSelection} />
                 <Dropdown category={dropdowns.rating} callback={dropdownSelection} />
 
-                <button className="btn right" onClick={() => {setDropdown("")}}>Reset</button>
+                <button className="btn right" type = "home" onClick={() => {setDropdown("")}}>Reset</button>
             </div>
         
             <main>
-                <FoodList foodData={foodList}/>
+                <FoodList foodData={foodList} />
             </main>
         </div>
       );

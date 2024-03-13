@@ -24,10 +24,10 @@ const App = () => {
             </header>
 
             <Routes>
-                <Route path="/home" element={<Home foodList = {restaurant}/>} />
-                <Route path="/restaurant" element={<Restaurant />} />
-                {/* <Route path=':restaurant' element={<Restaurant/>}/> */}
-                <Route path="/upload" element={<Upload applyRestaurantCallback = {applyRestaurant}/>} />
+                <Route path="/home" element={<Home foodList={restaurant} />}>
+                    <Route path=":restaurant" element={<Restaurant foodList={restaurant}/> } />
+                </Route>
+                <Route path="/upload" element={<Upload foodList={restaurant} applyRestaurantCallback={applyRestaurant} />} />
                 <Route path="*" element={<Navigate to='home' />} />
             </Routes>
             <Footer />

@@ -4,24 +4,25 @@ import { Link } from "react-router-dom";
 
 //component representing the restaurant cards in the home page
 function FoodCard(props) {
+  let restaurant = props.restaurant;
   return (
     <div className="card">
-      <Link to="/restaurant"><img src={"../"+props.img} alt={props.name}/></Link>
+      <Link to={"/home/"+encodeURIComponent(restaurant.name)}><img src={"../"+restaurant.img} alt={restaurant.name}/></Link>
       <div className="card-title">
-          <h2>{props.name}</h2>
-          <h2 className="right grade">{props.rating}</h2>
+          <h2>{restaurant.name}</h2>
+          <h2 className="right grade">{restaurant.rating}</h2>
       </div>
-      <p>{props.type}</p>
-      <p>{props.cost}</p>
-      <p>{props.description}</p>
+      <p>{restaurant.type}</p>
+      <p>{restaurant.cost}</p>
+      <p>{restaurant.description}</p>
     </div>
   )
 }
 
 export default function FoodList(props) {
-  const cards = props.foodData.map((food, index) => {
+  const cards = props.foodData.map((food) => {
     return (
-      <FoodCard key={index} {...food}/>
+      <FoodCard key={food.name} restaurant={food} />
     )
   });
 

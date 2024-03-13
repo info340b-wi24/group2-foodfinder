@@ -12,11 +12,18 @@ function Upload(props) {
         const price = document.getElementById('price').value;
         const description = document.getElementById('description').value;
 
-        if(name.length === 0 || type.length === 0  || rating.length === 0 || description.length === 0) {
-            alert('error, must input information before submit.');
-            return;
+        for (let i = 0; i < props.foodList.length; i++) {
+            if(name === props.foodList[i].name) {
+                alert('The restaurant is already uploaded on the homepage!');
+                return;
+            }
         }
 
+        if(name.length === 0 || type.length === 0  || rating.length === 0 || description.length === 0) {
+            alert('Error, must input information before submit.');
+            return;
+        }
+        
         const newRestaurant = {
             name: name,
             type: type,
