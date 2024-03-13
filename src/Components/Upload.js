@@ -45,9 +45,9 @@ function Upload(props) {
 
                     <div>
                         <h2>Cuisine Type</h2>
-                            <select id="cuisineType" style={{color: 'black'}}>
+                            <select id="cuisineType">
                                 <option value="" disabled selected hidden>Select Cuisine Type</option>
-                                <option value="Mexican">Mexican</option>
+                                <option value="Mexican" >Mexican</option>
                                 <option value="Chinese">Chinese</option>
                                 <option value="Thai">Thai</option>
                                 <option value="Korean">Korean</option>
@@ -57,7 +57,7 @@ function Upload(props) {
 
                     <div>
                         <h2>Rating</h2>
-                            <select id="rating" style={{color: 'black'}}>
+                            <select id="rating">
                                 <option value="" disabled selected hidden>Select Rating</option>
                                 <option value="A">A</option>
                                 <option value="B">B</option>
@@ -69,7 +69,7 @@ function Upload(props) {
 
                     <div>
                         <h2>Price</h2>
-                            <select id="price" style={{color: 'black'}}>
+                            <select id="price">
                                 <option value="" disabled selected hidden>Select Price</option>
                                 <option value="$">$</option>
                                 <option value="$$">$$</option>
