@@ -48,8 +48,9 @@ function Home(props) {
                 <Dropdown category={dropdowns.rating} callback={dropdownSelection} />
 
                 <button className="btn right" type = "home" onClick={() => {setDropdown("")}}>Reset</button>
+                <button className="btn right icon" type = "home" onClick={() => {setDropdown("")}}><img src="../img/go-back-arrow.png" alt="reset image"></img></button>
             </div>
-        
+
             <main>
                 <FoodList foodData={foodList} />
             </main>

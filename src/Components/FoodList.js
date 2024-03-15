@@ -7,7 +7,7 @@ function FoodCard(props) {
   let restaurant = props.restaurant;
   return (
     <div className="card">
-      <Link to={"/home/"+encodeURIComponent(restaurant.name)}><img src={"../"+restaurant.img} alt={restaurant.name}/></Link>
+      <Link to={"/restaurant/"+encodeURIComponent(restaurant.name)}><img src={restaurant.img} alt={restaurant.name}/></Link>
       <div className="card-title">
           <h2>{restaurant.name}</h2>
           <h2 className="right grade">{restaurant.rating}</h2>

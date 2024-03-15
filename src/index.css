@@ -309,10 +309,14 @@ font div .upload p {
     color: white;
 }
 
+.review {
+    width: 100%;
+}
 .review-header {
     background-color: #454141;
     border-radius: 1rem 1rem 0 0;
     padding: 0.5rem 2rem;
+    color: white;
 }
 
 
@@ -323,11 +327,13 @@ font div .upload p {
 
 .restaurant img {
     width: 100%;
+    max-height: 50%;
 }
 
-.title, .review {
+.title {
     width: 100%;
 }
+
 
 .title {
     padding-left: 2rem;
@@ -477,9 +483,6 @@ font div .upload p {
         width: 50%;
     }
 
-    .dropdown {
-        
-    }
 }
 
 @media (min-width: 781px) and (max-width: 1316px) {

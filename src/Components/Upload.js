@@ -8,7 +8,6 @@ function Upload(props) {
         e.preventDefault();
         const name = document.getElementById('restaurantName').value;
         const type = document.getElementById('cuisineType').value;
-        const rating = document.getElementById('rating').value;
         const price = document.getElementById('price').value;
         const description = document.getElementById('description').value;
 
@@ -19,7 +18,7 @@ function Upload(props) {
             }
         }
 
-        if(name.length === 0 || type.length === 0  || rating.length === 0 || description.length === 0) {
+        if(name.length === 0 || type.length === 0 || description.length === 0) {
             alert('Please input all information before submitting!');
             return;
         }
@@ -27,7 +26,6 @@ function Upload(props) {
         const newRestaurant = {
             name: name,
             type: type,
-            rating: rating,
             cost: price,
             description: description,
             img: "img/FOOD.webp"
@@ -63,18 +61,6 @@ function Upload(props) {
                     </div>
 
                     <div>
-                        <h2>Rating</h2>
-                            <select id="rating">
-                                <option value="" disabled selected hidden>Select Rating</option>
-                                <option value="A">A</option>
-                                <option value="B">B</option>
-                                <option value="C">C</option>
-                                <option value="D">D</option>
-                                <option value="F">F</option>
-                            </select>
-                    </div>
-
-                    <div>
                         <h2>Price</h2>
                             <select id="price">
                                 <option value="" disabled selected hidden>Select Price</option>
@@ -85,7 +71,7 @@ function Upload(props) {
                     </div>
 
                     <div>
-                        <h2>Review Description</h2>
+                        <h2>Location Description</h2>
                         <textarea id="description" placeholder="Review Description" style={{border: '1px solid black'}}></textarea>
                     </div>
 
